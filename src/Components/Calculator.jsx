@@ -30,7 +30,7 @@ const Calculator = () => {
                 setRes(Number(pre)%Number(post));
                 setPre(Number(pre)%Number(post));
             }
-        }else if(sym===""){
+        }else if(sym==="" && value!=="C" && value!=="+/-"){
             setPre((prev)=>prev+e.target.innerText);
             setBoard((prev)=>prev+e.target.innerText);
         }else if(value!=="C" || value!=="+/-"){
